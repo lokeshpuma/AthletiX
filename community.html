@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Community</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+    background-color: #f5d0f4;
+}
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #9c6ade;
+    color: white;
+}
+.nav-link {
+    color: white;
+    padding: 10px;
+}
+.nav-link:hover, .nav-link.active {
+    background: #f8b4ec;
+}
+#main-content {
+    width: calc(100% - 550px);
+}
+#right-sidebar {
+    width: 300px;
+    background: #f8f9fa;
+}
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.chat-item img {
+    margin-right: 10px;
+}
+.chat-item.active {
+    background: #ffebff;
+}
+.chat-bubble {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.chat-bubble.left {
+    background: #f0f0f0;
+    align-self: flex-start;
+}
+.chat-bubble.right {
+    background: #a200ff;
+    color: white;
+    align-self: flex-end;
+}
+.message-input {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+.message-input i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+body {
+            font-family: Arial, sans-serif;
+            background: #e9b7e0;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background: #4A4A8A;
+            padding: 15px;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .navbar a:hover {
+            background: #3a3a7a;
+        }
+        .container {
+          
+            text-align: center;
+        }
+        .hero {
+            background: #d66ce6;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .clubs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .club-card {
+            background: white;
+            padding: 5px;
+            margin: 5px;
+            width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .club-card h3 {
+            color: #4A4A8A;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #4A4A8A;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .search-bar {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            border: 2px solid #4A4A8A;
+            border-radius: 5px;
+        }
+</style>
+<body>
+
+
+<div class="d-flex">
+    <!-- Sidebar -->
+    <div id="sidebar" class="p-3">
+        <div class="profile-section text-center">
+            <img src="image/profile.png" class="rounded-circle" width="80" alt="Profile">
+            <h4>KL Rahul</h4>
+        </div>
+        <nav class="nav flex-column">
+            <a href="powner.html" class="nav-link" ><i class="fas fa-user"></i>&nbsp;&nbsp; Profile</a>
+            <a href="community.html" class="nav-link active"><i class="fas fa-users"></i>&nbsp;&nbsp; Community</a>
+            <a href="useranalytics.html" class="nav-link"><i class="fas fa-chart-bar"></i>&nbsp;&nbsp; User Analytics</a>
+            <a href="messages.html" class="nav-link "><i class="fas fa-envelope"></i>&nbsp;&nbsp; Messages</a>
+            <a href="following.html" class="nav-link"><i class="fas fa-user-friends"></i>&nbsp;&nbsp; Following</a>
+            <a href="notifications.html" class="nav-link"><i class="fas fa-bell"></i>&nbsp;&nbsp; Notifications</a>
+            <a href="more.html" class="nav-link"><i class="fas fa-reorder"></i>&nbsp;&nbsp; More</a> 
+            <a href="home.html" class="nav-link"><i class="fas fa-home"></i>&nbsp;&nbsp; Home</a>
+        </nav>
+        <hr>
+        <nav class="nav flex-column">
+            <a href="settings.html" class="nav-link"><i class="fas fa-cog"></i>&nbsp;&nbsp; Settings</a>
+            <a href="#" class="nav-link"><i class="fas fa-lock"></i>&nbsp;&nbsp; Security Data</a>
+            <a href="login&signup.html" class="nav-link text-dark"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp; Logout</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="flex-grow-1">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-light bg-light p-3">
+            <div class="container-fluid">
+                <img src="image/logo.png" width="40">
+                <input type="text" class="form-control w-50" placeholder="Search for friends...">
+                <div class="d-flex align-items-center" style="color:black">
+                    <img src="image/profile.png" class="rounded-circle" width="40" alt="User">
+                    <span class="ms-2">@Rahul_rcb </span><i class="fas fa-chevron-circle-down ms-1 "></i>
+                    <i class="fas fa-cog ms-4"></i> <i class="fas fa-bell ms-3"></i>&nbsp;&nbsp;
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="hero">
+                <h2 style="  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sports Community</h2></h1>
+                <p>Join our active sports community and connect with others!</p>
+                <input type="text" id="search" class="search-bar" placeholder="Search clubs...">
+                <a href="#" class="btn" id="joinBtn">Join</a>
+            </div>
+    
+            <h2 style="  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Join Clubs</h2>
+            <div class="clubs" id="clubList">
+                <div class="club-card">
+                    <h3>Gym Rats</h3>
+                    <p>Best fitness and workout club.</p>
+                    <button class="btn join-club">Join</button>
+                </div>
+                <div class="club-card">
+                    <h3>Swim Fast</h3>
+                    <p>Professional swimming community.</p>
+                    <button class="btn join-club">Join</button>
+                </div>
+                <div class="club-card">
+                    <h3>Cric Club</h3>
+                    <p>Cricket enthusiasts and pros.</p>
+                    <button class="btn join-club">Join</button>
+                </div>
+                <div class="club-card">
+                    <h3>Basketball Hub</h3>
+                    <p>Join the best basketball club.</p>
+                    <button class="btn join-club">Join</button>
+                </div>
+                <div class="club-card">
+                    <h3>fifa Hub</h3>
+                    <p>Join the best football club.</p>
+                    <button class="btn join-club">Join</button>
+                </div>
+                <div class="club-card">
+                    <h3>formula1 Hub</h3>
+                    <p>Join to Drag your dream</p>
+                    <button class="btn join-club">Join</button>
+                </div>
+            </div>
+        </div>
+    <script>
+        // JavaScript for joining clubs
+        document.addEventListener("DOMContentLoaded", function () {
+            const joinButtons = document.querySelectorAll(".join-club");
+
+            joinButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    alert("You have joined " + this.parentElement.querySelector("h3").textContent + "!");
+                    this.textContent = "Joined";
+                    this.style.background = "gray";
+                    this.disabled = true;
+                });
+            });
+
+            // Search clubs functionality
+            document.getElementById("search").addEventListener("input", function () {
+                let searchText = this.value.toLowerCase();
+                let clubs = document.querySelectorAll(".club-card");
+
+                clubs.forEach(club => {
+                    let clubName = club.querySelector("h3").textContent.toLowerCase();
+                    if (clubName.includes(searchText)) {
+                        club.style.display = "block";
+                    } else {
+                        club.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+    
+
+
+    </div>
+
+    <!-- Right Sidebar -->
+    <div id="right-sidebar" class="p-3">
+        <!-- People You May Know -->
+        <div class="card p-3 mb-3">
+            <h4 style="color:#6512d1; text-align: center;">People you may know</h4>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p1.png" class="rounded-circle" width="30" alt="Profile"><strong> Tony Stark</strong> - 6M+ Followers</a></p>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p2.png" class="rounded-circle" width="30" alt="Profile"><strong> Bruce Banners</strong> - 3M+ Followers</a></p>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p3.png" class="rounded-circle" width="30" alt="Profile"><strong> Natasha Romanoff</strong> - Tagged you in her 250th post</a></p>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p4.png" class="rounded-circle" width="30" alt="Profile"><strong> Barton Clint</strong> - Liked your comment</a></p>
+        </div>
+        <!-- Boost Your Post -->
+        <div class="card p-3">
+            <h4 style="color:#6512d1; text-align: center;">Boost Your Post</h4>
+            <p> <a href="powner.html" class="nav-link text-dark"><strong>@Rahul_rcb</strong> “Alone we go fast, together we go far.” <img src="image/post.png" class="img-fluid rounded mt-2" alt="Nature"><i class="fas fa-heart"></i> 180k others liked your post</p></a>
+            <p><a href="powner.html" class="nav-link text-dark"><strong>@Rahul_rcb</strong> “Family by heart, teammates by choice.”<img src="image/post1.png" class="img-fluid rounded mt-2" alt="Nature"><i class="fas fa-heart"></i> 1.7M others liked your post</p></a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
