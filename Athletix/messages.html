@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Messages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+    body {
+    background-color: #f5d0f4;
+}
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #9c6ade;
+    color: white;
+}
+.nav-link {
+    color: white;
+    padding: 10px;
+}
+.nav-link:hover, .nav-link.active {
+    background: #f8b4ec;
+}
+#main-content {
+    width: calc(100% - 550px);
+}
+#right-sidebar {
+    width: 300px;
+    background: #9c6ade;
+}
+
+body {
+            background-color: #f0f2f5;
+        }
+        .chat-container {
+            display: flex;
+            height: 90vh;
+        }
+        .sidebar {
+            width: 25%;
+            background: #9c6ade;
+            border-right: 1px solid #ddd;
+            padding: 15px;
+            overflow-y: auto;
+            border: black;
+        }
+        .chat-window {
+            width: calc(100% - 550px);
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-header {
+            background: #9c6ade;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .chat-body {
+            flex-grow: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background: #f5d0f4;
+        }
+        .chat-message {
+            max-width: 60%;
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        .sent {
+            background: #9c6ade;
+            color: white;
+            align-self: flex-end;
+        }
+        .received {
+            background: white;
+            align-self: flex-start;
+            border: 1px solid #ddd;
+        }
+        .message-input {
+            display: flex;
+            padding: 10px;
+            background: white;
+            border-top: 1px solid #ddd;
+        }
+        .message-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+        }
+        .message-input button {
+            margin-left: 0px;
+            background: #9c6ade;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+        }
+        .list-group-item {
+            n.nav-link {
+    color: white;
+    padding: 10px;
+}
+
+.nav-link:hover, .nav-link.active {
+    background: #f8b4ec;
+}
+        }
+</style>
+<body>
+
+
+<div class="d-flex">
+    <!-- Sidebar -->
+    <div id="sidebar" class="p-3">
+        <div class="profile-section text-center">
+            <img src="image/profile.png" class="rounded-circle" width="80" alt="Profile">
+            <h4 >KL Rahul</h4>
+        </div>
+        <nav class="nav flex-column">
+            <a href="powner.html" class="nav-link"><i class="fas fa-user"></i>&nbsp;&nbsp; Profile</a>
+            <a href="community.html" class="nav-link"><i class="fas fa-users"></i>&nbsp;&nbsp; Community</a>
+            <a href="useranalytics.html" class="nav-link"><i class="fas fa-chart-bar"></i>&nbsp;&nbsp; User Analytics</a>
+            <a href="messages.html" class="nav-link active"><i class="fas fa-envelope"></i>&nbsp;&nbsp; Messages</a>
+            <a href="following.html" class="nav-link"><i class="fas fa-user-friends"></i>&nbsp;&nbsp; Following</a>
+            <a href="notifications.html" class="nav-link"><i class="fas fa-bell"></i>&nbsp;&nbsp; Notifications</a>
+            <a href="more.html" class="nav-link"><i class="fas fa-reorder"></i>&nbsp;&nbsp; More</a> 
+            <a href="home.html" class="nav-link"><i class="fas fa-home"></i>&nbsp;&nbsp; Home</a>
+        </nav>
+        <hr>
+        <nav class="nav flex-column">
+            <a href="settings.html" class="nav-link"><i class="fas fa-cog"></i>&nbsp;&nbsp; Settings</a>
+            <a href="#" class="nav-link"><i class="fas fa-lock"></i>&nbsp;&nbsp; Security Data</a>
+            <a href="login&signup.html" class="nav-link text-d"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp; Logout</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="flex-grow-1">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-light bg-light p-3">
+            <div class="container-fluid" >
+                <img src="image/logo.png" width="40">
+                <input type="text" class="form-control w-50" placeholder="Search for friends...">
+                <div class="d-flex align-items-center">
+                    <img src="image/profile.png" class="rounded-circle" width="40" alt="User">
+                    <span class="ms-2">@Rahul_rcb </span><i class="fas fa-chevron-circle-down ms-1 "></i>
+                    <i class="fas fa-cog ms-4"></i> <i class="fas fa-bell ms-3"></i>&nbsp;&nbsp;
+                    <a href="gpt.html" ><img src="image/fox.png"class="rounded-circle" width="40"></a>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="chat-container">
+        
+        
+        <!-- Sidebar -->
+            <div class="sidebar col-md-4">
+                <h5 style="color: white; text-align: center;">Messages</h5>
+                <input type="text" class="form-control " style="align-items: center;" placeholder="Search by name..."><br>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action ">
+                    <img src="image/p2.png" class="rounded-circle" width="40"> Amanda McNary
+                </a>
+                <a href="#" class="list-group-item list-group-item-action nav-link active text-dark">
+                    <img src="image/p3.png" class="rounded-circle" width="40"> Jake Leichtling
+                </a>
+                
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="image/p4.png" class="rounded-circle" width="40"> Jake Leichtling
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="image/p2.png" class="rounded-circle" width="40"> Jake Leichtling
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="image/p3.png" class="rounded-circle" width="40"> Jake Leichtling
+                </a> 
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="image/p4.png" class="rounded-circle" width="40"> Jake Leichtling
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="image/p2.png" class="rounded-circle" width="40"> Jake Leichtling
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="image/p3.png" class="rounded-circle" width="40"> Jake Leichtling
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="image/p4.png" class="rounded-circle" width="40"> Jake Leichtling
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="image/p2.png" class="rounded-circle" width="40"> Jake Leichtling
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <img src="image/p3.png" class="rounded-circle" width="40"> Jake Leichtling
+                </a>
+
+                <!-- Add more contacts here -->
+                </div>
+            </div>
+
+        <!-- Chat Window -->
+        <div class="chat-window col-md-8">
+            <div class="chat-header"><img src="image/p3.png" class="rounded-circle" width="30"style="float: left;"><i class="fas fa-reorder" style="float: right;"></i>Jake Leichtling</div>
+            <div class="chat-body d-flex flex-column p-3">
+                <div class="chat-message received">I can't wait for the party tonight 🎉</div>
+                <div class="chat-message sent">Can't wait to catch up</div>
+            </div>
+            <div class="message-input d-flex">
+                <input type="text" id="message" placeholder="Chat message">
+                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        
+    
+
+        <script>
+        function sendMessage() {
+            const messageBox = document.getElementById("message");
+            const chatBody = document.querySelector(".chat-body");
+            
+            if (messageBox.value.trim() !== "") {
+                let messageDiv = document.createElement("div");
+                messageDiv.className = "chat-message sent";
+                messageDiv.textContent = messageBox.value;
+                chatBody.appendChild(messageDiv);
+                messageBox.value = "";
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+        }
+        </script>
+   
+
+
+
+
+
+    <!-- Right Sidebar -->
+    <div id="right-sidebar" class="p-3">
+        <!-- People You May Know -->
+        <div class="card p-3 mb-3">
+            <h4 style="color:#6512d1; text-align: center;">People you may know</h4>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p1.png" class="rounded-circle" width="30" alt="Profile"><strong> Tony Stark</strong> - 6M+ Followers</a></p>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p2.png" class="rounded-circle" width="30" alt="Profile"><strong> Bruce Banners</strong> - 3M+ Followers</a></p>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p3.png" class="rounded-circle" width="30" alt="Profile"><strong> Natasha Romanoff</strong> - Tagged you in her 250th post</a></p>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p4.png" class="rounded-circle" width="30" alt="Profile"><strong> Barton Clint</strong> - Liked your comment</a></p>
+        </div>
+        <!-- Boost Your Post -->
+        <div class="card p-3">
+            <h4 style="color:#6512d1; text-align: center;">Boost Your Post</h4>
+            <p> <a href="powner.html" class="nav-link text-dark"><strong>@Rahul_rcb</strong> “Alone we go fast, together we go far.” <img src="image/post.png" class="img-fluid rounded mt-2" alt="Nature"><i class="fas fa-heart"></i> 180k others liked your post</p></a>
+            <p><a href="powner.html" class="nav-link text-dark"><strong>@Rahul_rcb</strong> “Family by heart, teammates by choice.”<img src="image/post1.png" class="img-fluid rounded mt-2" alt="Nature"><i class="fas fa-heart"></i> 1.7M others liked your post</p></a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

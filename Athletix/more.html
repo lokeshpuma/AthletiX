@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>More</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    body {
+    background-color: #f5d0f4;
+    font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+}
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #9c6ade;
+    color: white;
+}
+.nav-link {
+    color: white;
+    padding: 10px;
+}
+.nav-link:hover, .nav-link.active {
+    background: #f8b4ec;
+}
+#main-content {
+    width: calc(100% - 550px);
+}
+#right-sidebar {
+    width: 280px;
+    background: #9c6ade;
+}
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+    
+body {
+            
+        }
+        .container {
+            text-align: center;
+        }
+      
+        .clubs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .club-card {
+            background: white;
+            padding: 5px;
+            margin: 5px;
+            width: 300px;
+            height: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .club-card h3 {
+            color: #4A4A8A;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #4A4A8A;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            
+        }
+       
+</style>
+<body>
+<div class="d-flex">
+    <!-- Sidebar -->
+    <div id="sidebar" class="p-3">
+        <div class="profile-section text-center">
+            <img src="image/profile.png" class="rounded-circle" width="80" alt="Profile">
+            <h4>KL Rahul</h4>
+        </div>
+        <nav class="nav flex-column">
+            <a href="powner.html" class="nav-link" ><i class="fas fa-user"></i>&nbsp;&nbsp; Profile</a>
+            <a href="community.html" class="nav-link "><i class="fas fa-users"></i>&nbsp;&nbsp; Community</a>
+            <a href="useranalytics.html" class="nav-link"><i class="fas fa-chart-bar"></i>&nbsp;&nbsp; User Analytics</a>
+            <a href="messages.html" class="nav-link "><i class="fas fa-envelope"></i>&nbsp;&nbsp; Messages</a>
+            <a href="following.html" class="nav-link"><i class="fas fa-user-friends"></i>&nbsp;&nbsp; Following</a>
+            <a href="notifications.html" class="nav-link"><i class="fas fa-bell"></i>&nbsp;&nbsp; Notifications</a>
+            <a href="more.html" class="nav-link active"><i class="fas fa-reorder"></i>&nbsp;&nbsp; More</a> 
+            <a href="home.html" class="nav-link"><i class="fas fa-home"></i>&nbsp;&nbsp; Home</a>
+        </nav>
+        <hr>
+        <nav class="nav flex-column">
+            <a href="settings.html" class="nav-link"><i class="fas fa-cog"></i>&nbsp;&nbsp; Settings</a>
+            <a href="#" class="nav-link"><i class="fas fa-lock"></i>&nbsp;&nbsp; Security Data</a>
+            <a href="login&signup.html" class="nav-link text-dark"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp; Logout</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="flex-grow-1">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-light bg-light p-3">
+            <div class="container-fluid">
+                <img src="image/logo.png" width="40">
+                <input type="text" class="form-control w-50" placeholder="Search for friends...">
+                <div class="d-flex align-items-center">
+                    <img src="image/profile.png" class="rounded-circle" width="40" alt="User">
+                    <span class="ms-2">@Rahul_rcb </span><i class="fas fa-chevron-circle-down ms-1 "></i>
+                    <i class="fas fa-cog ms-4"></i> <i class="fas fa-bell ms-3"></i>&nbsp;&nbsp;
+                    <a href="gpt.html" ><img src="image/fox.png"class="rounded-circle" width="40"></a>
+                </div>
+            </div>
+        </nav>
+    
+   
+        <div class="container mt-4">
+            <div class="clubs" id="clubList">
+            <a href="events.html" class="nav-link text-dark ">
+                <div class="club-card">
+                <h2 style="color:#6512d1 ; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Events</h2>
+                <p>Best fitness and workout club.</p><br><br><br><br><br><br>
+                <button class="btn join-club">view</button>
+                </div>
+            </a>
+            <a href="sponcer.html" class="nav-link text-dark">
+            <div class="club-card">
+                <h2 style="color:#6512d1 ; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sponsers</h2>
+                <p>Professional swimming community.</p><br><br><br><br><br><br>
+                <button class="btn join-club">view</button>
+            </div>
+            </a>
+        </div>
+     </div>
+</div>
+
+     <!-- Right Sidebar -->
+    <div id="right-sidebar" class="p-3">
+        <!-- People You May Know -->
+        <div class="card p-3 mb-3">
+            <h4 style="color:#6512d1; text-align: center;">People you may know</h4>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p1.png" class="rounded-circle" width="30" alt="Profile"><strong> Tony Stark</strong> - 6M+ Followers</a></p>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p2.png" class="rounded-circle" width="30" alt="Profile"><strong> Bruce Banners</strong> - 3M+ Followers</a></p>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p3.png" class="rounded-circle" width="30" alt="Profile"><strong> Natasha Romanoff</strong> - Tagged you in her 250th post</a></p>
+            <p><a href="pvisiter.html" class="nav-link text-dark"><img src="image/p4.png" class="rounded-circle" width="30" alt="Profile"><strong> Barton Clint</strong> - Liked your comment</a></p>
+        </div>
+        <!-- Boost Your Post -->
+        <div class="card p-3">
+            <h4 style="color:#6512d1; text-align: center;">Boost Your Post</h4>
+            <p> <a href="powner.html" class="nav-link text-dark"><strong>@Rahul_rcb</strong> “Alone we go fast, together we go far.” <img src="image/post.png" class="img-fluid rounded mt-2" alt="Nature"><i class="fas fa-heart"></i> 180k others liked your post</p></a>
+            <p><a href="powner.html" class="nav-link text-dark"><strong>@Rahul_rcb</strong> “Family by heart, teammates by choice.”<img src="image/post1.png" class="img-fluid rounded mt-2" alt="Nature"><i class="fas fa-heart"></i> 1.7M others liked your post</p></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
